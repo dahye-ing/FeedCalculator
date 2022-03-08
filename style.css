@@ -1,0 +1,10 @@
+body{padding:0px; margin:0px;}
+#main-container{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+select option[value=""][disabled] {
+  display: none;
+}
