@@ -8,3 +8,7 @@ body{padding:0px; margin:0px;}
 select option[value=""][disabled] {
   display: none;
 }
+
+#goFeedBtn{
+  display: none;
+}

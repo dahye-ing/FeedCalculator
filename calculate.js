@@ -1,4 +1,5 @@
 document.getElementById("kcalBtn").addEventListener("click", cal_MER);
+document.getElementById("goFeedBtn").addEventListener("click", go_feed);
 
 function cal_MER(){
   let weight = document.getElementById("weight").value;
@@ -22,4 +23,9 @@ function cal_MER(){
 
   mer = rer*weight
   document.getElementById("mer").innerHTML = mer.toFixed(1)+'칼로리 냠냠';
+  document.getElementById("goFeedBtn").style.display = 'block';
+}
+
+function go_feed(){
+  
 }
