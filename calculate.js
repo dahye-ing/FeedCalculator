@@ -23,7 +23,7 @@ function fetchPage(name, mer){
     }
     else if (name=='feed') {
       if(mer){
-        document.getElementById("kcalInfo").value = mer;
+        document.getElementById("kcalInfo").value = mer.toFixed(1);
       }
     }
     })
