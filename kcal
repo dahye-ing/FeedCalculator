@@ -1,0 +1,23 @@
+<div id="kcal-content">
+  <label for="weight">몸무게</label>
+  <input class="" type="number" id="weight" name="weight">kg<br>
+
+  <label for="feature">특이사항</label>
+  <select class="" id="feature" name="feature">
+    <option value="" disabled selected>♡♡♡ 선택 ♡♡♡</option>
+    <option value="3">4개월 미만 고양이</option>
+    <option value="2.5">4개월 ~ 6개월 고양이</option>
+    <option value="2">7개월 ~ 12개월 고양이</option>
+    <option value="1.2">중성화한 성묘</option>
+    <option value="1.4">일반 성묘</option>
+    <option value="1.6">운동량이 많은 성묘</option>
+    <option value="1">운동량이 적은 성묘</option>
+    <option value="0.8">다이어트 중인 고양이</option>
+    <option value="0.7">노묘</option>
+    <option value="3">임신한 고양이</option>
+    <option value="4">수유중인 고양이</option>
+  </select><br>
+  <button id="kcalBtn">칼로리 계산</button>
+  <p id="mer"><p>
+  <button id="goFeedBtn"><a onclick="fetchPage('feed', mer)">급여량 계산하러 가기</a></button>
+</div>

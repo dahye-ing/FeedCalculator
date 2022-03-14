@@ -1,4 +1,34 @@
-document.getElementById("kcalBtn").addEventListener("click", cal_MER);
+var http = require('http');
+var fs = require('fs');
+var app = http.createServer(function(request,response){
+    var url = request.url;
+    if(request.url == '/'){
+      url = '/index.html';
+    }
+    if(request.url == '/favicon.ico'){
+      return response.writeHead(404);
+    }
+    response.writeHead(200);
+    response.end(fs.readFileSync(__dirname + url));
+
+});
+app.listen(3000);
+
+function fetchPage(name, mer){
+  fetch(name).then(function(response){
+    response.text().then(function(text){
+    document.querySelector('content').innerHTML = text;
+    if(name=='kcal'){
+        document.getElementById("kcalBtn").addEventListener("click", cal_MER);
+    }
+    else if (name=='feed') {
+      if(mer){
+        document.getElementById("kcalInfo").value = mer;
+      }
+    }
+    })
+  });
+}
 
 function cal_MER(){
   let weight = document.getElementById("weight").value;

@@ -1,0 +1,18 @@
+<div id="feed-content">
+  <div>
+    <input class="" type="text" id="kcalInfo" name="kcalInfo" value="">칼로리 냠냠<br>
+  </div>
+  <div id="feed-select">
+    <div>
+      <select class="" id="wet" name="wet">
+        <option value="" disabled selected>♡♡♡ 습/생식 ♡♡♡</option>
+      </select>
+    </div>
+    <div>
+      <select class="" id="dry" name="dry">
+        <option value="" disabled selected>♡♡♡ 건사료 ♡♡♡</option>
+      </select>
+    </div>
+  </div>
+  <button id="feedBtn">급여량 계산</button>
+</div>
