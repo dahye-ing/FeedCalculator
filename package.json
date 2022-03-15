@@ -1,0 +1,22 @@
+{
+  "name": "feedcalculator",
+  "version": "1.0.0",
+  "description": "beginning",
+  "main": "calculate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dahye-ing/FeedCalculator.git"
+  },
+  "author": "dahye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dahye-ing/FeedCalculator/issues"
+  },
+  "homepage": "https://github.com/dahye-ing/FeedCalculator#readme",
+  "dependencies": {
+    "mariadb": "^3.0.0"
+  }
+}

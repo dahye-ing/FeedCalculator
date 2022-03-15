@@ -1,7 +1,8 @@
-var http = require('http');
-var fs = require('fs');
-var app = http.createServer(function(request,response){
-    var url = request.url;
+const http = require('http');
+const fs = require('fs');
+const conn = require('./db_conn');
+const app = http.createServer(function(request,response){
+    const url = request.url;
     if(request.url == '/'){
       url = '/index.html';
     }
@@ -13,6 +14,13 @@ var app = http.createServer(function(request,response){
 
 });
 app.listen(3000);
+
+conn((conn) => {
+  conn.query(
+    select * from
+  );
+  conn.release();
+});
 
 function fetchPage(name, mer){
   fetch(name).then(function(response){
