@@ -3,6 +3,6 @@
   "port": 3306,
   "user": "dahye",
   "password": "im1994",
-  "connectionLimit": 5,
+  "connectionLimit": 10,
   "database":"nyang"
 }

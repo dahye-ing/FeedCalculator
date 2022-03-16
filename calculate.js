@@ -1,8 +1,8 @@
 const http = require('http');
 const fs = require('fs');
-const conn = require('./db_conn');
+const mariaConn = require('./db_conn');
 const app = http.createServer(function(request,response){
-    const url = request.url;
+    var url = request.url;
     if(request.url == '/'){
       url = '/index.html';
     }
@@ -15,9 +15,9 @@ const app = http.createServer(function(request,response){
 });
 app.listen(3000);
 
-conn((conn) => {
+mariaConn((conn) => {
   conn.query(
-    select * from
+    "SELECT * from product"
   );
   conn.release();
 });
