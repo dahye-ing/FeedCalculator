@@ -1,8 +1,0 @@
-{
-  "host": "129.154.56.154",
-  "port": 3306,
-  "user": "dahye",
-  "password": "im1994",
-  "connectionLimit": 10,
-  "database":"nyang"
-}
