@@ -1,0 +1,5 @@
+# ignore db connection config
+db_config.json
+
+# ignore node modules folder
+node_modules/
